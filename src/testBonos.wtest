@@ -1,0 +1,25 @@
+import bonos.*
+import categorias.*
+import pepe.*
+
+describe "Test Pepe como gerente"{
+	method initialize(){
+		pepe.setCategoria(gerente)
+	}
+		test "Con bono porcentaje y bono presentismo depende faltas"{
+			pepe.setBonoResultado(bonoPorcentaje)
+			pepe.setBonoPresentismo(bonoDependeFaltas)
+			assert.equals(11100, pepe.sueldoPepe())
+	}
+}
+
+describe "Test Pepe como cadete"{
+	method initialize(){
+		pepe.setCategoria(cadete)
+	}
+	
+	test "Con bono porcentaje y bono presentismo depende faltas"{
+			pepe.setBonoResultado(bonoPorcentaje)
+			pepe.setBonoPresentismo(bonoDependeFaltas)
+			assert.equals(16600, pepe.sueldoPepe())
+}
