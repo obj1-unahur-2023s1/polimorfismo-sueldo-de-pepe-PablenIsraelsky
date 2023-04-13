@@ -21,5 +21,6 @@ describe "Test Pepe como cadete"{
 	test "Con bono porcentaje y bono presentismo depende faltas"{
 			pepe.setBonoResultado(bonoPorcentaje)
 			pepe.setBonoPresentismo(bonoDependeFaltas)
-			assert.equals(16600, pepe.sueldoPepe())
+			assert.equals(16600, pepe.sueldoPepe())		
+	}
 }
